@@ -72,13 +72,13 @@ so the slope of the straight line is $0$. This only works because $y=c$ is a str
 \begin{question}
   What is
   \[
-  \ddx e
+  \ddx \pi
   \]
   equal to?
   \begin{hint}
     Remember,
     \[
-    e = 2.718281828459045\dots.
+    \pi = 3.14159265\dots.
     \]
   \end{hint}
   \begin{prompt}
@@ -92,8 +92,9 @@ so the slope of the straight line is $0$. This only works because $y=c$ is a str
 Next, let's examine derivatives of powers of a single variable. 
 To gain intuition, you should compute the
 derivative of $f(x) = x^3$ using the limit definition of the
-derivative. Before computing this derivative, we should recall 
-the \textit{Binomial Theorem}.
+derivative. In order to formally know why this is true, we need to call upon the 
+the \textit{Binomial Theorem}, which you may or may not have heard
+of in a statistics class or some algebra classess.
 
 \begin{theorem}[Binomial Theorem]\index{Binomial Theorem}
 If $n$ is a nonnegative integer, then
@@ -225,13 +226,14 @@ velocity of the bus and the velocity of the walking person.
 \begin{theorem}[The sum rule]\index{derivative rules!sum}\index{sum rule}\label{theorem:sum rule}
 If $f(x)$ and $g(x)$ are differentiable and $c$ is a constant, then 
 \begin{enumerate}
-\item\label{SR:1} $\ddx \big( f(x) + g(x)\big) = f'(x) + g'(x)$,
+\item $\ddx \big( f(x) + g(x)\big) = f'(x) + g'(x)$,
 \item $\ddx \big( f(x) - g(x)\big) = f'(x) - g'(x)$,
 \item $\ddx \big(c\cdot f(x)\big) = c\cdot f'(x)$.
 \end{enumerate}
 
 \begin{explanation}
-We will only prove part~\ref{SR:1} above; the rest are similar. Write with me
+We will only prove part (from part a of the above theorem) above;
+the rest are similar. Write with me
 \begin{image}
   \begin{tikzpicture}
     \node at (0,0) {$\begin{aligned}
